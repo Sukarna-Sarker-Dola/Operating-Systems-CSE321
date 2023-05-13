@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Enter a number"
+read num
+result=$num
+if [ $num -ne 1 -a $num -ne 4 ];
+then
+result=$?
+fi
+function happynumber {
+while [ $num -gt 0 ];
+do
+rem=$((num%10))
+remember=$((rem*rem))
+sum=$((sum+remember))
+num=$((num/10))
+done
+return $sum
+} 
+happynumber num
+echo $?
+if [ $result -eq 1 ];
+then echo " $num is a happy number"
+else 
+echo "$num is not a happy number"
+fi

@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "Enter a number"
+read num
+a=$((num%2))
+b=$((num%3))
+if [ $a -eq 0 -a $b -eq 0 ]; then
+echo "Hello"
+elif [ $a -eq 0 -o $b -eq 0 ]; then
+echo "Nihao"
+else 
+echo "Hola"
+fi

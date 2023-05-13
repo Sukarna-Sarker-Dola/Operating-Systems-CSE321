@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Which operation would you like to do?"
+read operation 
+echo "Enter a number"
+read num1
+echo "Enter another number"
+read num2
+
+a=$(( $num1 + $num2 ))
+b=$(( $num1 - $num2 ))
+c=$(( $num1 * $num2 ))
+d=$(( $num1 / $num2 ))
+if [ $operation == + ]; then
+echo "The result is $a"
+elif [ $operation == - ]; then
+echo "The result is $b"
+elif [ $operation == / ]; then
+echo "The result is $d"
+else 
+echo "The result is $c"
+fi
