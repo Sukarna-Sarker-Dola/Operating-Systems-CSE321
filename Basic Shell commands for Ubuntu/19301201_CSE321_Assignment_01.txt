@@ -1,0 +1,51 @@
+1.
+. pwd
+  ls
+  cd Desktop
+  cd excalibur
+  cat > excalibur.txt
+
+. ls -l
+  chmod u+x excalibur.txt
+  ls -l
+  chmod g-w excalibur.txt
+  ls -l
+  chmod g+x excalibur.txt
+  ls -l
+  chmod o=x excalibur.txt
+  ls -l
+
+. mkdir mydirectory
+
+. cp -i excalibur.txt mydirectory
+
+. ls
+  rm excalibur.txt
+
+
+
+2.
+. cd mydirectory
+  rm *
+  rm -r *
+
+
+
+3.
+. ls *.txt
+
+
+
+4.
+.ls a*
+
+
+
+5.
+. cat > a.txt
+  sed -n 12,18p a.txt
+
+
+6.
+. cd mydirectory 
+  ls *.txt
